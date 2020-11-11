@@ -1,0 +1,48 @@
+﻿@model DHSolutionsWeb.Models.Games
+
+@{
+    ViewBag.Title = "Detaljer";
+}
+
+@Html.Partial("underHeader", "Detaljer")
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.desc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.desc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.realease_year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.realease_year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.img_url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.img_url)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Redigera", "addEdit", new { id = Model.Id }) |
+    @Html.ActionLink("Tillbaka", "Index")
+</p>

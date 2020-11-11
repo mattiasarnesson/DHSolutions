@@ -1,0 +1,41 @@
+﻿
+@model DHSolutionsWeb.Models.Games
+
+@{
+    ViewBag.Title = "addEdit";
+}
+
+@Html.Partial("underHeader", "Skapa/Redigera spel")
+
+<div class="form-body">
+    @using (Html.BeginForm())
+    {
+
+        @Html.HiddenFor(model => model.Id);
+
+        <div class="form-group">
+            @Html.DisplayNameFor(model => model.img_url)
+            @Html.TextBoxFor(model => model.img_url, new { @class = "form-control" , @maxlenght = "500" })
+            
+        </div>
+
+        <div class="form-group">
+            @Html.DisplayNameFor(model => model.title)
+            @Html.TextBoxFor(model => model.title, new { @class = "form-control", @maxlenght = "30", @required = "required" })
+        </div>
+
+        <div class="form-group">
+            @Html.DisplayNameFor(model => model.desc)
+            @Html.TextBoxFor(model => model.desc, new { @class = "form-control", @maxlenght = "500", @required = "required" })
+        </div>
+
+        <div class="form-group">
+            @Html.DisplayNameFor(model => model.realease_year)
+            @Html.TextBoxFor(model => model.realease_year, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date", @required = "required" })
+        </div>
+
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Spara" />
+        </div>
+    }
+</div>
