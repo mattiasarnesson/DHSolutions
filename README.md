@@ -27,6 +27,22 @@ Jag började projektet genom att skapa ett en Databas samt en tabell som kunde h
 
 Därav följde jag konceptet "database first" och efter de skapade jag en modell och implementerade en controller för sjävla API:et. Relativ långt tid lades ner på API:ET. Då det var längesen jag jobbade just med API:ER i ASP.NET. Jag stötte snabbt på fel och körde ett antal tester i PostMan för att diagnosiera felen. Efter detta löste jag problemen och kunde gå vidare till att utveckla hemsidan. 
 
-Hemsidan utvecklade jag precis som vilken hemsida som helst och gjorde det väldigt basic
+Hemsidan utvecklade jag precis som vilken hemsida som helst och gjorde det väldigt basic. Den består av tre sidor. En som representerar listan med alla spel, en vy för att redigera och lägga till samt en detaljerad vy. 
 
 <h2>Förbättringar & Diskussion</h2>
+
+Om jag nu skulle vidarutveckla detta koncept/projekt...
+
+1.* Bättre Client-side validering i alla input fields. Just nu använder jag bara grundläggande HTML Validation. Man hade kunnat använda JQuery Validation för att uppnå ännu bättre validering. 
+
+2.* Server-side validering. Just nu finns den inprincip ingen server side validation och ingen respons på ifall något går fel till klient.
+
+3.* UX/UI Uppdatering. Hade kunnat göra gränssnitten mer användarvänligt. Tex när man tar väck ett föremål i listan så hade man kunnat på en varning först innan man tar väck den. Det hade jag då gjort med JS. 
+
+4.* Filhantering. Man kan länka till en bild på spelfodralet. Det hade höjt komplexiteten av projektet ifall man kanske fick ladda upp en bild till tex Azure istället för att bara länka till en URL. 
+
+5.* Rensat projekten. Jag startade projekten från MVC Standard Template. Jag hade kunnat rensa upp bättre i alla filer som ej används och imports osv. 
+
+6.* Kommentarer. Nu har jag ej kommenterat koden då detta projekt var såpass litet att detta ej kändes nödvändigt. Men jag hoppas att detta dokument förklarar lite med ingående istället för kommentarer. 
+
+Tack för mig, Mattias Arnesson
