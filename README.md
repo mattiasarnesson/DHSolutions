@@ -1,5 +1,4 @@
-<div class="text-white bg-blue mb-2">
-<img src='https://www.dhsolutions.se/media/1016/dhsolutions.png'></img>
-</div>
+<img src='https://unikum.se/media/1351/lo_ab_dh_solutions_ny.png?v=636262818484188877'></img>
+
 
 Av Mattias Arnesson
